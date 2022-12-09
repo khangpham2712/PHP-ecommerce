@@ -1,0 +1,24 @@
+RewriteEngine on
+
+Options -Indexes
+ErrorDocument 403 http://localhost:8080/BK_Apple_Store/404.php
+ErrorDocument 404 http://localhost:8080/BK_Apple_Store/404.php
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /404.php [L]
+
+
+RewriteRule ^home index.php [NC,L]
+RewriteRule ^news news.php [NC,L]
+RewriteRule ^watch watch.php [NC,L]
+RewriteRule ^cart-history cart_history.php [NC,L]
+RewriteRule ^contact contact.php [NC,L]
+RewriteRule ^login login.php [NC,L]
+RewriteRule ^mac mac.php [NC,L]
+RewriteRule ^ipad ipad.php [NC,L]
+RewriteRule ^signup signup.php [NC,L]
+RewriteRule ^iphone iphone.php [NC,L]
+RewriteRule ^user-info user_info.php [NC,L]
+RewriteRule ^product-list product_list.php [NC,L]
+RewriteRule ^cart-detail cart-detail.php [NC,L]
+

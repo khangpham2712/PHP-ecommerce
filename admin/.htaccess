@@ -1,0 +1,14 @@
+RewriteEngine on
+
+RewriteRule ^home index.php [NC,L]
+RewriteRule ^add-account add_account.php [NC,L]
+RewriteRule ^user-order user_order.php [NC,L]
+RewriteRule ^inbox inbox.php [NC,L]
+RewriteRule ^login login.php [NC,L]
+RewriteRule ^mobile mobile.php [NC,L]
+RewriteRule ^admin-info admin_info.php [NC,L]
+RewriteRule ^user-list user_list.php [NC,L]
+RewriteRule ^add-product add_product.php [NC,L]
+RewriteRule ^edit-product edit_product.php [NC,L]
+RewriteRule ^product-list product_list.php [NC,L]
+
